@@ -12,14 +12,14 @@ const ParkingSpace = ({ spot }: ParkingSpaceProps) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <div className="relative">
+          <div className="relative flex items-center justify-center">
             <div
               className={cn(
-                "w-12 h-8 rounded-sm transition-colors duration-300",
+                "w-4 h-4 rounded-sm transition-colors duration-300",
                 spot.isOccupied ? "bg-[#ea384c]" : "bg-[#34c759]"
               )}
             >
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-600">
+              <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[0.75rem] text-gray-600">
                 {spot.spotNumber}
               </span>
             </div>

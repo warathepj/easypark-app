@@ -80,7 +80,7 @@ const Data: React.FC = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold">Parking Data</h1>
-        <Button onClick={() => navigate('/')}>Back to Simulator</Button>
+        <Button onClick={() => navigate('/')}>Back to Home</Button>
       </div>
 
       <div className="bg-white rounded-lg shadow p-6 space-y-6">
